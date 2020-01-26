@@ -48,4 +48,4 @@ in main.c, add this at USER CODE BEGIN 4
 # EXAMPLE
 The example in the example directory is generated from this ioc, with some additional simple tools added
 * The printf is directed to uart2.  scanf is NOT directed to uart2, but could be.
-* A very simple task scheduler is connected, and demonstrates doing very simple tasks on a time base.  Doing printf from these tasks "it a really bad idea" - it's occuring in the system tick interrupt context. This is only to demonstrated that the tasks are executing.
+* A very simple task scheduler is connected, and demonstrates doing very simple tasks on a time base.  Doing printf from these tasks "it a really bad idea" - it's occuring in the system tick interrupt context. This is only to demonstrate that the tasks are executing. Settings/clearing flags/semaphores, setting gpio, etc, are all perfectly acceptable.
